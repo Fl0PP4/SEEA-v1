@@ -1,0 +1,160 @@
+.map-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f8fafc;
+}
+
+.map-header {
+  padding: 1.2rem 1.5rem;
+  background: white;
+  border-bottom: 1px solid #e2e8f0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  z-index: 10;
+}
+
+.map-header-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.back-btn {
+  background: #1e40af;
+  border: none;
+  font-size: 0.8rem;
+  cursor: pointer;
+  color: white;
+  font-weight: 700;
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  transition: background-color 0.2s, transform 0.2s;
+  max-width: 8rem;
+  height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-btn:hover {
+  background-color: #1e3a8a;
+  transform: translateX(-1px);
+}
+
+.map-header h2 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 1.5rem;
+}
+
+.map-header p {
+  margin: 4px 0 0;
+  color: #64748b;
+}
+
+.map-container {
+  flex: 1;
+  position: relative;
+}
+
+/* Painel lateral com informações */
+.seller-detail-panel {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: white;
+  border-radius: 20px;
+  padding: 8px 20px 20px 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+  max-width: 380px;
+  z-index: 1000;
+}
+
+.close-panel {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #f1f5f9;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #0f172a;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  padding: 0;
+}
+
+.close-panel:hover {
+  background: #e2e8f0;
+  transform: scale(1.1);
+}
+
+.seller-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  margin-top: 12px;
+}
+
+.seller-detail-panel h3 {
+  margin: 0 0 8px;
+  color: #0f172a;
+}
+
+.rating {
+  color: #eab308;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.address {
+  color: #64748b;
+  margin-bottom: 16px;
+}
+
+.products {
+  margin: 16px 0;
+  padding: 12px 0;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 0.98rem;
+}
+
+.contact-btn, .buy-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  font-weight: 700;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.contact-btn {
+  background: white;
+  color: #1e40af;
+  border: 2px solid #1e40af;
+}
+
+.buy-btn {
+  background: #1e40af;
+  color: white;
+  border: none;
+}
+
+.contact-btn:hover {
+  background: #f8fafc;
+}
+
+.buy-btn:hover {
+  background: #1e3a8a;
+}
